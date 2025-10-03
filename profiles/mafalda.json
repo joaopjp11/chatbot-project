@@ -9,15 +9,12 @@
       "duracao": "2023",
       "responsabilidades": [
         "Regulamentação de Equipamentos no INFARMED",
-        "Comercialização de Equoipamentos"
+        "Comercialização de Equipamentos"
       ]
-    },
+    }
   ],
   "habilidades": ["Python", "Regulamentação", "Gestão de projetos"],
-  "objetivos": "Crescer na área de tecnologia e engenharia",
-  "info_extra": {
-    "hobbies": ["", ""]
-  }
+  "objetivos": "Crescer na área de tecnologia e engenharia"
 }
 
 

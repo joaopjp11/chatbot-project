@@ -1,20 +1,33 @@
-# digital_twin/person.py
+from typing import List, Dict, Any, Optional
 
 class Person:
-    def __init__(self, name: str, age: int, nationality: str, personality: str, profession: str, style: str = "normal"):
-        self.name = name
-        self.age = age
-        self.nationality = nationality
-        self.personality = personality
-        self.profession = profession
-        self.style = style
+	def __init__(
+		self,
+		nome: Optional[str] = None,
+		idade: Optional[int] = None,
+		formacao: Optional[str] = None,
+		experiencia: Optional[List[Dict[str, Any]]] = None,
+		habilidades: Optional[List[str]] = None,
+		objetivos: Optional[str] = None,
+		info_extra: Optional[Dict[str, Any]] = None
+	):
+		self.nome = nome
+		self.idade = idade
+		self.formacao = formacao
+		self.experiencia = experiencia if experiencia is not None else []
+		self.habilidades = habilidades if habilidades is not None else []
+		self.objetivos = objetivos
+		self.info_extra = info_extra if info_extra is not None else {}
 
-    def profile_summary(self) -> str:
-        return (
-            f"Nome: {self.name}. Idade: {self.age}. Nacionalidade: {self.nationality}. "
-            f"Personalidade: {self.personality}. Profissão: {self.profession}. "
-            f"Estilo de comunicação: {self.style}."
-        )
-
-    def __repr__(self):
-        return f"<Person {self.name}>"
+	@classmethod
+	def from_dict(cls, data: dict):
+		# Handle missing or empty fields
+		return cls(
+			nome=data.get("nome"),
+			idade=data.get("idade") if data.get("idade") not in (None, "") else None,
+			formacao=data.get("formacao"),
+			experiencia=data.get("experiencia") if data.get("experiencia") is not None else [],
+			habilidades=data.get("habilidades") if data.get("habilidades") is not None else [],
+			objetivos=data.get("objetivos"),
+			info_extra=data.get("info_extra") if data.get("info_extra") is not None else {}
+		)
