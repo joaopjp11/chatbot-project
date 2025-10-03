@@ -10,7 +10,7 @@ def load_profile(file_path: str) -> Person:
     return Person.from_dict(data)
 
 def choose_profile() -> Person:
-    # lista todos os ficheiros JSON dentro de /data
+    # lista todos os ficheiros JSON 
     profiles = [f for f in os.listdir(DATA_DIR) if f.endswith(".json")]
     
     print("Perfis disponíveis:\n")
