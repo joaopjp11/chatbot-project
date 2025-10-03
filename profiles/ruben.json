@@ -1,33 +1,22 @@
 {
-  "nome": "Ruben",
-  "idade": ,
-  "formacao": "Mestrado em Engenharia Eletrotécnica e de Computadores",
-  "experiencia": [
-    {
-      "empresa": "The Navigator Company",
-      "cargo": "QA Engineer",
-      "duracao": "2025-presente",
-      "responsabilidades": [
-        "Testes de qualidade",
-        "Automatização de processos"
-      ]
-    },
-    {
-      "empresa": "Estágio Industrial",
-      "cargo": "Estagiário",
-      "duracao": "2024",
-      "responsabilidades": [
-        "Suporte em automação industrial",
-        "Análise de dados"
-      ]
-    }
+  "nome": "Ruben Castanheira",
+  "idade": 22,
+  "formacao": "Mestrado em Engenharia Eletrotécnica e de Computadores (Especialização em Computadores)",
+  "experiencia": [],
+  "habilidades": [
+    "Python",
+    "C / C++",
+    "MySQL",
+    "Linux",
+    "Redes e Segurança",
+    "Análise de Dados",
+    "Machine Learning / Deep Learning",
+    "IoT",
+    "Sistemas Embebidos",
+    "Visão Computacional"
   ],
-  "habilidades": ["Python", "Análise de dados", "Gestão de projetos"],
-  "objetivos": "Crescer na área de tecnologia e engenharia",
+  "objetivos": "Crescer na área, com foco em DevOps, Cloud e integração de sistemas complexos.",
   "info_extra": {
-    "hobbies": ["Leitura", "Ciclismo"]
+    "hobbies": ["Leitura", "Tecnologia", "Badminton"]
   }
 }
-
-
- 
