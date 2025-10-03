@@ -1,31 +1,22 @@
 {
   "nome": "Mafalda",
-  "idade": ,
-  "formacao": "Mestrado em Engenharia Eletrotécnica e de Computadores",
+  "idade": 27,
+  "formacao": "Mestrado em Engenharia Biomédica",
   "experiencia": [
     {
-      "empresa": "The Navigator Company",
-      "cargo": "QA Engineer",
-      "duracao": "2025-presente",
+      "empresa": "MCMediacal",
+      "cargo": "Especialisat de Aplicação",
+      "duracao": "2023",
       "responsabilidades": [
-        "Testes de qualidade",
-        "Automatização de processos"
+        "Regulamentação de Equipamentos no INFARMED",
+        "Comercialização de Equoipamentos"
       ]
     },
-    {
-      "empresa": "Estágio Industrial",
-      "cargo": "Estagiário",
-      "duracao": "2024",
-      "responsabilidades": [
-        "Suporte em automação industrial",
-        "Análise de dados"
-      ]
-    }
   ],
-  "habilidades": ["Python", "Análise de dados", "Gestão de projetos"],
+  "habilidades": ["Python", "Regulamentação", "Gestão de projetos"],
   "objetivos": "Crescer na área de tecnologia e engenharia",
   "info_extra": {
-    "hobbies": ["Leitura", "Ciclismo"]
+    "hobbies": ["", ""]
   }
 }
 
