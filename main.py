@@ -13,7 +13,7 @@ def choose_profile() -> Person:
     # lista todos os ficheiros JSON 
     profiles = [f for f in os.listdir(DATA_DIR) if f.endswith(".json")]
     
-    print("Perfis disponíveis:\n")
+    print("Pessoas disponíveis:\n")
     for i, p in enumerate(profiles, start=1):
         nome_perfil = os.path.splitext(p)[0]
         print(f"{i}. {nome_perfil}")
@@ -21,11 +21,10 @@ def choose_profile() -> Person:
     # pedir escolha ao utilizador
     while True:
         try:
-            choice = int(input("\nEscolhe o número do perfil: "))
+            choice = int(input("\nEscolhe o número da pessoa com quem gostarias de falar: "))
             if 1 <= choice <= len(profiles):
                 selected = profiles[choice - 1]
                 nome_perfil = os.path.splitext(selected)[0]
-                print(f"\nSelecionaste: {nome_perfil}\n")
                 return load_profile(os.path.join(DATA_DIR, selected))
             else:
                 print("Número inválido, tenta novamente.")
@@ -34,6 +33,5 @@ def choose_profile() -> Person:
 
 if __name__ == "__main__":
     pessoa = choose_profile()
-
-    print(f"Chatbot a representar: {pessoa.nome}\n")
+    print(f"\nChatbot a representar: {pessoa.nome}\n")
 

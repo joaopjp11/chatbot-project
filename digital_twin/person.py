@@ -21,7 +21,6 @@ class Person:
 
 	@classmethod
 	def from_dict(cls, data: dict):
-		# Handle missing or empty fields
 		return cls(
 			nome=data.get("nome") if data.get("nome") not in (None, "") else "",
 			idade=data.get("idade") if data.get("idade") not in (None, "") else None,
